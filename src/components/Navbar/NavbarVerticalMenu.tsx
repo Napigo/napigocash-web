@@ -20,7 +20,12 @@ export const NavbarVerticalMenu: React.FC = () => {
             </button>
             <AnimatePresence>
                 {open && (
-                    <motion.div initial={{ height: 0 }} animate={{ height: "auto" }} exit={{ height: 0 }} className="flex w-full bg-primary_darker absolute top-[70px] left-0 flex-col overflow-hidden">
+                    <motion.div
+                        initial={{ height: 0 }}
+                        animate={{ height: "100vh" }}
+                        exit={{ height: 0 }}
+                        className="flex w-full bg-primary_darker absolute top-[70px] left-0 flex-col overflow-hidden"
+                    >
                         <button type="button" className="hover:text-primary_light hover:bg-primary_lucent pt-5 pb-5">
                             Features
                         </button>
