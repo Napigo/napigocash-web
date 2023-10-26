@@ -8,9 +8,9 @@ export const Header: React.FC = () => {
     const showLargePhone = Boolean(screen === "xl" || screen === "lg");
 
     return (
-        <header className="relative w-screen h-auto flex flex-col lg:flex-row items-center justify-center">
+        <header className="relative w-screen h-auto flex flex-collg:flex-row items-center justify-center">
             {/* Background Image */}
-            <div className="absolute inset-0 w-full h-full bg-cover bg-center" style={{ backgroundImage: "url(/header-bg.png)" }}></div>
+            <div className="absolute inset-0  w-full h-full bg-cover bg-center" style={{ backgroundImage: "url(/header-bg.png)" }}></div>
             <div className="w-full h-full z-50 px-5 lg:px-20 flex flex-col lg:flex-row justify-between items-start text-center lg:text-left">
                 <div className="w-full lg:w-1/2 h-auto mt-[200px]">
                     <div className="flex flex-col">
@@ -45,7 +45,7 @@ export const Header: React.FC = () => {
                     </div>
                 </div>
                 {showLargePhone && (
-                    <div className="w-full lg:w-1/2 h-auto flex justify-center items-center pt-[100px] lg:pt-[250px]">
+                    <div className="w-full lg:w-1/2 h-screen flex justify-center items-center pt-[100px] lg:pt-[10%]">
                         <Image
                             src="/header-phone.svg"
                             alt="header-phone"
