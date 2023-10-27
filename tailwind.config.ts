@@ -23,7 +23,7 @@ const config: Config = {
                 success_lucent: "rgba(13, 222, 97, 0.20)",
                 danger: "#E04545",
                 danger_lucent: "rgba(224, 69, 69, 0.20)",
-                content_white: "#fffff",
+                content_white: "#ffffff",
                 content_gray: "#8A8D8C",
                 paper_1: "#161717",
                 paper_2: "#232525",
