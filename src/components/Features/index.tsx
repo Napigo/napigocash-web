@@ -3,7 +3,7 @@ import React from "react";
 
 export const Features: React.FC = () => {
     return (
-        <div className="w-full h-screen bg-background flex flex-col items-center pr-20 pl-20">
+        <div className="w-full h-auto bg-background flex flex-col items-center pr-20 pl-20 pb-20">
             <h1 className="font-extrabold text-primary text-3xl pb-[10%]  lg:pb-[10%] pt-5">Feature</h1>
             <div className="flex items-center w-full flex-col lg:flex-row">
                 <div className="w-full lg:w-1/2  h-auto">
@@ -40,7 +40,7 @@ export const Features: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full lg:w-1/2 h-full">
+                <div className="w-full lg:w-1/2 h-full flex flex-row items-center justify-center">
                     <Image priority src="/feature-phone.svg" width={633} height={477} alt="feature phone" />
                 </div>
             </div>
